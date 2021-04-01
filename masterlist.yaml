@@ -1474,9 +1474,12 @@ groups:
   - name: &ccorGroup CCOR
     after: [ *aceGroup ]
 
+  - name: &spoGroup SPO
+    after: [ *ccorGroup ]
+
   - name: &racesGroup Races & Classes
     description: 'A group for modules that modify character Races & Classes.'
-    after: [ *ccorGroup ]
+    after: [ *spoGroup ]
 
   - name: &economyGroup Economy
     description: 'A group for mods that alter the Economy of the game.'
@@ -11672,6 +11675,7 @@ plugins:
 
   - name: 'Smithing Perks Overhaul SE.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/19246/' ]
+    group: *spoGroup
     after: [ 'Complete Crafting Overhaul_Remastered.esp' ]
     inc:
       - 'PathOfMight.esp'

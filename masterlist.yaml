@@ -1471,9 +1471,12 @@ groups:
   - name: &aceGroup ACE
     after: [ *waccfGroup ]
 
+  - name: &ccorGroup CCOR
+    after: [ *aceGroup ]
+
   - name: &racesGroup Races & Classes
     description: 'A group for modules that modify character Races & Classes.'
-    after: [ *aceGroup ]
+    after: [ *ccorGroup ]
 
   - name: &economyGroup Economy
     description: 'A group for mods that alter the Economy of the game.'
@@ -8161,7 +8164,7 @@ plugins:
 
   - name: 'Complete Crafting Overhaul_Remastered.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/28608/' ]
-    group: *craftingGroup
+    group: *ccorGroup
     after: [ 'WACCF_Armor and Clothing Extension.esp' ]
     inc: [ 'Ars Metallica.esp' ]
     req: [ *SKSE ]

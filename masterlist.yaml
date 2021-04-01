@@ -1465,9 +1465,12 @@ groups:
   - name: default
     after: [ *earlyLoadersGroup ]
 
+  - name: &waccfGroup WACCF
+    after: [ default ]
+
   - name: &racesGroup Races & Classes
     description: 'A group for modules that modify character Races & Classes.'
-    after: [ default ]
+    after: [ *waccfGroup ]
 
   - name: &economyGroup Economy
     description: 'A group for mods that alter the Economy of the game.'
@@ -9154,6 +9157,7 @@ plugins:
 
   - name: 'Weapons Armor Clothing & Clutter Fixes.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/18994/' ]
+    group: *waccfGroup
     inc: [ 'Race Scale Remover.esp' ]
     after:
       - name: 'Guard Dialogue Overhaul.esp'

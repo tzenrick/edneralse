@@ -1468,9 +1468,12 @@ groups:
   - name: &waccfGroup WACCF
     after: [ default ]
 
+  - name: &aceGroup ACE
+    after: [ *waccfGroup ]
+
   - name: &racesGroup Races & Classes
     description: 'A group for modules that modify character Races & Classes.'
-    after: [ *waccfGroup ]
+    after: [ *aceGroup ]
 
   - name: &economyGroup Economy
     description: 'A group for mods that alter the Economy of the game.'
@@ -11853,6 +11856,7 @@ plugins:
 
   - name: 'WACCF_Armor and Clothing Extension.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/19002/' ]
+    group: *aceGroup
     after:
       - 'AmuletsShowOnEverything.esp'
       - 'AmuletsShowOnClothes.esp'

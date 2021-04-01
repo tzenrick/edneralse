@@ -1467,8 +1467,11 @@ groups:
 
 ###### Test Groups ######
 
-  - name: &waccfGroup WACCF
+  - name: &gdoGroup GDO
     after: [ default ]
+
+  - name: &waccfGroup WACCF
+    after: [ *gdoGroup ]
 
   - name: &aceGroup ACE
     after: [ *waccfGroup ]
@@ -10003,6 +10006,7 @@ plugins:
         name: 'Guard Dialogue Overhaul Redux'
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/22075/'
         name: 'Guard Dialogue Overhaul SE'
+    group: *gdoGroup
     after:
       - 'Ambriel.esp'
       - 'Cutting Room Floor.esp'

@@ -1467,8 +1467,11 @@ groups:
 
 ###### Test Groups ######
 
-  - name: &gdoGroup GDO
+  - name: &crfGroup CRF
     after: [ default ]
+
+  - name: &gdoGroup GDO
+    after: [ *crfGroup ]
 
   - name: &waccfGroup WACCF
     after: [ *gdoGroup ]
@@ -13981,6 +13984,7 @@ plugins:
       - 'https://www.nexusmods.com/skyrimspecialedition/mods/276/'
       - 'https://www.afkmods.com/index.php?/files/file/978-cutting-room-floor/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2955350'
+    group: *crfGroup
     after:
       - '3DNPC.esp'
       - 'Audio Overhaul Skyrim.esp'

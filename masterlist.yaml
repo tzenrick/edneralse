@@ -1479,9 +1479,12 @@ groups:
   - name: &spoGroup SPO
     after: [ *ccorGroup ]
 
+  - name: &cacoGroup CACO
+    after: [ *spoGroup ]
+
   - name: &racesGroup Races & Classes
     description: 'A group for modules that modify character Races & Classes.'
-    after: [ *spoGroup ]
+    after: [ *cacoGroup ]
 
   - name: &economyGroup Economy
     description: 'A group for mods that alter the Economy of the game.'
@@ -8106,7 +8109,7 @@ plugins:
 
   - name: 'Complete Alchemy & Cooking Overhaul.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/19924/' ]
-    group: *craftingGroup
+    group: *cacoGroup
     req:
       - *SKSE
       - *SKSE_VR

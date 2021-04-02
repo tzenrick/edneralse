@@ -1467,8 +1467,11 @@ groups:
 
 ###### Test Groups ######
 
-  - name: &rdoGroup RDO
+  - name: &icaioGroup ICAIO
     after: [ default ]
+
+  - name: &rdoGroup RDO
+    after: [ *icaioGroup ]
 
   - name: &crfGroup CRF
     after: [ *rdoGroup ]
@@ -10053,7 +10056,7 @@ plugins:
       - link: 'https://bethesda.net/en/mods/skyrim/mod-detail/3016198/'
         name: 'Immersive Citizens AI Overhaul'
   - name: 'Immersive Citizens - AI Overhaul.esp'
-    group: *lowPriorityGroup
+    group: *icaioGroup
     inc:
       - 'EEKs Arcadia''s Cauldron.esp'
       - 'EEKs Arcadia''s - OCS.esp'

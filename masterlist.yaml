@@ -1476,8 +1476,11 @@ groups:
   - name: &crfGroup CRF
     after: [ *rdoGroup ]
 
-  - name: &gdoGroup GDO
+  - name: &bcsGroup BCS
     after: [ *crfGroup ]
+
+  - name: &gdoGroup GDO
+    after: [ *bcsGroup ]
 
   - name: &waccfGroup WACCF
     after: [ *gdoGroup ]
@@ -12010,6 +12013,7 @@ plugins:
         name: 'Book Covers Skyrim - Desaturated'
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/10/'
         name: 'Another Sorting Mod - Replacer Plugin'
+    group: *bcsGroup
     msg:
       - *alreadyInLotD
       - <<: *patch3rdParty

@@ -1467,8 +1467,11 @@ groups:
 
 ###### Test Groups ######
 
-  - name: &crfGroup CRF
+  - name: &rdoGroup RDO
     after: [ default ]
+
+  - name: &crfGroup CRF
+    after: [ *rdoGroup ]
 
   - name: &gdoGroup GDO
     after: [ *crfGroup ]
@@ -10243,6 +10246,7 @@ plugins:
         name: 'Relationship Dialogue Overhaul - RDO SE'
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/42068/'
         name: 'Relationship Dialogue Overhaul Lite Fixed'
+    group: *rdoGroup
     after:
       - '018Auri.esp'
       - 'Immersive Citizens - AI Overhaul.esp'

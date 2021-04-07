@@ -1467,37 +1467,37 @@ groups:
 
 ###### Test Groups ######
 
-  - name: &icaioGroup ICAIO
+  - name: &icaioGroup Immersive Citizens
     after: [ default ]
 
-  - name: &rdoGroup RDO
+  - name: &rdoGroup Relationship Dialogue Overhaul
     after: [ *icaioGroup ]
 
-  - name: &crfGroup CRF
+  - name: &crfGroup Cutting Room Floor
     after: [ *rdoGroup ]
 
-  - name: &bcsGroup BCS
+  - name: &bcsGroup Book Covers
     after: [ *crfGroup ]
 
-  - name: &gdoGroup GDO
+  - name: &gdoGroup Guard Dialogue Overhaul
     after: [ *bcsGroup ]
 
-  - name: &aslalGroup ASLAL
+  - name: &aslalGroup Alternate Start
     after: [ *gdoGroup ]
 
-  - name: &waccfGroup WACCF
+  - name: &waccfGroup Weapons Armor Clothing & Clutter Fixes
     after: [ *aslalGroup ]
 
-  - name: &aceGroup ACE
+  - name: &aceGroup Armor and Clothing Extension
     after: [ *waccfGroup ]
 
-  - name: &ccorGroup CCOR
+  - name: &ccorGroup Complete Crafting Overhaul
     after: [ *aceGroup ]
 
-  - name: &spoGroup SPO
+  - name: &spoGroup Smithing Perks Overhaul
     after: [ *ccorGroup ]
 
-  - name: &cacoGroup CACO
+  - name: &cacoGroup Complete Alchemy & Cooking Overhaul
     after: [ *spoGroup ]
 
   - name: &racesGroup Races & Classes

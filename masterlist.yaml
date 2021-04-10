@@ -1491,8 +1491,11 @@ groups:
   - name: &aceGroup Armor and Clothing Extension
     after: [ *waccfGroup ]
 
-  - name: &ccorGroup Complete Crafting Overhaul
+  - name: &mluGroup Morrowloot Ultimate
     after: [ *aceGroup ]
+
+  - name: &ccorGroup Complete Crafting Overhaul
+    after: [ *mluGroup ]
 
   - name: &spoGroup Smithing Perks Overhaul
     after: [ *ccorGroup ]

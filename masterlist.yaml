@@ -1473,8 +1473,11 @@ groups:
   - name: &rdoGroup Relationship Dialogue Overhaul
     after: [ *icaioGroup ]
 
-  - name: &crfGroup Cutting Room Floor
+  - name: &horsesGroup Horses
     after: [ *rdoGroup ]
+
+  - name: &crfGroup Cutting Room Floor
+    after: [ *horsesGroup ]
 
   - name: &bcsGroup Book Covers
     after: [ *crfGroup ]
@@ -9835,6 +9838,7 @@ plugins:
 
   - name: 'Convenient Horses.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/9519/' ]
+    group: *horsesGroup
     after:
       - 'AmazingFollowerTweaks.esp'
       - 'Immersive Citizens - AI Overhaul.esp'
@@ -9881,6 +9885,7 @@ plugins:
 
   - name: 'Immersive Horses.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/13402/' ]
+    group: *horsesGroup
     after:
       - 'AmazingFollowerTweaks.esp'
       - 'Immersive Citizens - AI Overhaul.esp'

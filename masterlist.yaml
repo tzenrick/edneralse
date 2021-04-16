@@ -1476,8 +1476,11 @@ groups:
   - name: &horsesGroup Horses
     after: [ *rdoGroup ]
 
-  - name: &crfGroup Cutting Room Floor
+  - name: &ssoGroup Standing Stone Overhauls
     after: [ *horsesGroup ]
+
+  - name: &crfGroup Cutting Room Floor
+    after: [ *ssoGroup ]
 
   - name: &bcsGroup Book Covers
     after: [ *crfGroup ]
@@ -9303,6 +9306,7 @@ plugins:
 
   - name: 'Andromeda - Unique Standing Stones of Skyrim.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/14910/' ]
+    group: *ssoGroup
     inc:
       - 'Aurora - Standing Stones of Skyrim.esp'
       - 'Better_Standing_Stones.esp'
@@ -9537,6 +9541,7 @@ plugins:
 
   - name: 'Mundus.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/33411/' ]
+    group: *ssoGroup
     after:
       - 'Convenient Horses.esp'
       - 'Disparity.esp'

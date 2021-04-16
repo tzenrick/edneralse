@@ -9456,6 +9456,7 @@ plugins:
 
   - name: 'Evenstar - Minimalistic Standing Stones of Skyrim.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/41256' ]
+    group: *ssoGroup
     after:
       - 'Convenient Horses.esp'
       - 'Disparity.esp'
